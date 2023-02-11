@@ -2,44 +2,11 @@
 ---
 
 @import 'jekyll-theme-cayman';
-@import "minima";
+
 
 .site-header {
     background: #ffffff;
     border: none;
     color: #d8d4d4;
     min-height: 80px;
-}
-
-.site-nav {
-    @include media-query($on-palm) {
-        margin-top: 12px;
-    }
-
-    .page-link {
-        color: $header-brand-color;
-        line-height: 80px;
-        
-        @include media-query($on-palm) {
-            color: darken($header-brand-color, $amount: 10);
-            line-height: 40px;
-        }
-        
-        &:hover {
-            text-decoration: none;
-            span {
-                text-decoration: underline;
-            }
-        }
-        
-        &.active {
-            color: #fff;
-            font-weight: 600;
-            pointer-events: none;
-
-            @include media-query($on-palm) {
-                color: #000;
-            }
-        }
-    }
 }
