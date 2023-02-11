@@ -2,7 +2,8 @@
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
     <meta charset="UTF-8">
-
+    <!-- add icon link -->
+  <link rel = "icon" href ="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/dnb-logo.svg" alt="DNB Logo">
 {% seo %}
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
@@ -15,10 +16,7 @@
   <body>
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <div class="container">
-				<div class="project-name"><a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/images/dnb-logo.svg" alt="DNB Logo" width="95" height="33" /></a></div>
-    </header>
+
 
     <header class="page-header" role="banner">
       <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
